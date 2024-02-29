@@ -1,8 +1,20 @@
-name: "repetition"
+#the mod name as displayed in-game
 displayName: "Repetition"
+
+#the internal name of your mod
+name: "repetition-mod"
+
+#your name
 author: "HumansAreWeak"
-description: "Overhaul of Mindustry"
-version: "1.0"
-minGameVersion: "146"
-dependencies: [  ]
-hidden: false
+
+#the fully qualified main class of the mod
+main: "repetition.Repetition"
+
+#the mod description as seen in the mod dialog
+description: "Mindustry Overhaul Mod"
+
+#the mod version
+version: 1.0
+
+#the minimum game build required to run this mod
+minGameVersion: 146
