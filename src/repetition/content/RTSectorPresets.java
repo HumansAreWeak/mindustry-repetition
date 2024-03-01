@@ -8,12 +8,12 @@ public class RTSectorPresets {
 
     public static void load() {
         // Kepler-62b
-        crashLanding = new SectorPreset("crashLanding", kepler62b, 15) {{
-            alwaysUnlocked = true;
-            addStartingItems = true;
-            difficulty = 0;
-            overrideLaunchDefaults = true;
-            noLighting = true;
-        }};
+        // crashLanding = new SectorPreset("crashLanding", kepler62b, 15) {{
+            // alwaysUnlocked = true;
+            // addStartingItems = true;
+            // difficulty = 0;
+            // overrideLaunchDefaults = true;
+            // noLighting = true;
+        // }};
     }
 }

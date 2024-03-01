@@ -6,6 +6,7 @@ import repetition.util.RTElementSymbol;
 import repetition.util.RTPair;
 
 public class RTItem extends Item implements RTElementSymbol {
+    public final String internalName;
     private String symbol;
     private RTPair<Integer, RTElementSymbol>[] compounds;
 
@@ -13,12 +14,15 @@ public class RTItem extends Item implements RTElementSymbol {
         super(name, color);
         this.symbol = symbol;
         this.compounds = null;
+        this.internalName = name;
     }
 
+    @SafeVarargs
     public RTItem(final String name, final Color color, RTPair<Integer, RTElementSymbol>... compounds) {
         super(name, color);
         this.compounds = compounds;
         this.symbol = getSymbolFromCompounds(compounds);
+        this.internalName = name;
     }
 
     private final String getSymbolFromCompounds(RTPair<Integer, RTElementSymbol>[] compounds) {
@@ -37,6 +41,7 @@ public class RTItem extends Item implements RTElementSymbol {
         return new RTItem(item.name, item.color, symbol);
     }
 
+    @SafeVarargs
     public static RTItem fromItem(final Item item, RTPair<Integer, RTElementSymbol>... compounds) {
         return new RTItem(item.name, item.color, compounds);
     }

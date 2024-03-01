@@ -6,6 +6,7 @@ import mindustry.gen.Icon;
 import mindustry.mod.Mod;
 import mindustry.ui.Links;
 import mindustry.ui.dialogs.BaseDialog;
+import repetition.content.RTBlocks;
 import repetition.content.RTItems;
 import repetition.content.RTLiquids;
 import repetition.content.RTPlanets;
@@ -41,5 +42,6 @@ public class Repetition extends Mod {
         RTSectorPresets.load();
         RTItems.load();
         RTLiquids.load();
+        RTBlocks.load();
     }
 }
