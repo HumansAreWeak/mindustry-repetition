@@ -9,6 +9,7 @@ import mindustry.ui.dialogs.BaseDialog;
 import repetition.content.RTItems;
 import repetition.content.RTLiquids;
 import repetition.content.RTPlanets;
+import repetition.content.RTSectorPresets;
 
 public class Repetition extends Mod {
     public static final String MOD_RELEASES = "https://github.com/HumansAreWeak/mindustry-repetition/releases";
@@ -37,6 +38,7 @@ public class Repetition extends Mod {
     @Override
     public void loadContent() {
         RTPlanets.load();
+        RTSectorPresets.load();
         RTItems.load();
         RTLiquids.load();
     }

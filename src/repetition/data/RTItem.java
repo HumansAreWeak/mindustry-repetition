@@ -5,7 +5,7 @@ import mindustry.type.Item;
 import repetition.util.RTElementSymbol;
 import repetition.util.RTPair;
 
-class RTItem extends Item implements RTElementSymbol {
+public class RTItem extends Item implements RTElementSymbol {
     private String symbol;
     private RTPair<Integer, RTElementSymbol>[] compounds;
 
